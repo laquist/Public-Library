@@ -1,0 +1,10 @@
+Sidebar i venstre side
+Fjern dots
+Luft mellem knapper hvor det er logisk
+Gør knapperne pænere
+Meget gerne ved hover effekter
+
+Evt. brug frameworks til dette: 
+Material design
+Material css
+Animate.css / .js
