@@ -1,5 +1,5 @@
 function load_listBooks () {
-    document.getElementById("content").innerHTML='<object type="text/html" data="listBooks.html"></object>';
+    document.getElementById("content").innerHTML='<object type="text/html" data="listBooksTEST.html"></object>';
 }
 
 function load_createBook () {

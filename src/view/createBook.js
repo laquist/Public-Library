@@ -1,3 +1,12 @@
+pl.view.loadCreateBook = {
+    setupHTML: function () {
+        var element = document.getElementById('content');
+        var htmlString = '';
+
+        htmlString += <h1>Create a new book record</h1>;
+    }
+}
+
 pl.view.createBook = {
     setupUserInterface: function () {
         var saveButton = document.forms['Book'].commit;
