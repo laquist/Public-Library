@@ -4,6 +4,7 @@
   <meta charset="UTF-8" />
   <title>Minimal JS front-end App Example</title>
   <script src="src/model/Book.js"></script>
+  <script src="src/view/loadContent.js"></script>
   <link rel="stylesheet" type="text/css" href="style.css">
   <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
 </head>
@@ -15,10 +16,10 @@
         <input id="searchBox" type="text" placeholder="Search">
       </div>
       <menu>
-        <li><a href="listBooks.html"><button type="button">List all books</button></a></li>
-        <li><a href="createBook.html"><button type="button">Add a new book</button></a></li>
-        <li><a href="updateBook.html"><button type="button">Update a book</button></a></li>
-        <li><a href="deleteBook.html"><button type="button">Delete a book</button></a></li>
+        <li><a href="#" onclick="load_listBooks()"><button type="button">List all books</button></a></li>
+        <li><a href="#" onclick="load_createBook()"><button type="button">Add a new book</button></a></li>
+        <li><a href="#" onclick="load_updateBook()"><button type="button">Update a book</button></a></li>
+        <li><a href="#" onclick="load_deleteBook()"><button type="button">Delete a book</button></a></li>
         <li><button type="button" onclick="Book.clearData()">Clear database</button></li>
         <li><button type="button" onclick="Book.createTestData()">Create test data</button></li>
       </menu>

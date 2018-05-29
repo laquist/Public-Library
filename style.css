@@ -66,5 +66,13 @@ menu li button:hover {
 }
 
 #content {
+    width: 100vw;
+    height: 100vh;
     padding: 20px;
+
+}
+
+#content object {
+    height: 100%;
+    width: 100%;
 }
