@@ -6,6 +6,9 @@ pl.view.loadBooks = {
     setupHTML: function () {
         var element = document.getElementById('content');
         var htmlString = '';
+
+        //Removes existing content
+        pl.view.clearPage.clearContent();
     
         htmlString += '<h1>List all books</h1>';
         htmlString += '<table id="books">';
@@ -16,10 +19,6 @@ pl.view.loadBooks = {
         element.insertAdjacentHTML('beforeend', htmlString);
     
         pl.view.listBooks.setupUserInterface();
-
-        //***
-        //Den messer up når man klikker 2 gange. Det skal lige fixes
-        //Skal den bare cleare før man trykker ude i menuen? Den skal jo ikke kunne trykkes på 2 gange alligevel.
     }
 }
 

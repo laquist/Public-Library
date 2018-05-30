@@ -3,7 +3,20 @@ pl.view.loadCreateBook = {
         var element = document.getElementById('content');
         var htmlString = '';
 
-        htmlString += <h1>Create a new book record</h1>;
+        //Removes existing content
+        pl.view.clearPage.clearContent();
+
+        htmlString += '<h1>Create a new book record</h1>';
+        htmlString += '<form id="Book">';
+        htmlString += '<p><label>ISBN: <input name="isbn" /></label></p>';
+        htmlString += '<p><label>Title: <input name="title" /></label></p>';
+        htmlString += '<p><label>Year: <input name="year" /></label></p>';
+        htmlString += '<p><button type="button" name="commit">Save</button></p>';
+        htmlString += '</form>';
+
+        element.insertAdjacentHTML('beforeend', htmlString);
+
+        pl.view.createBook.setupUserInterface();
     }
 }
 

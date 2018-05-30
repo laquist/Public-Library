@@ -5,6 +5,7 @@
   <title>Minimal JS front-end App Example</title>
   <script src="src/model/Book.js"></script>
   <script src="src/ctrl/initialize.js"></script>
+  <script src="src/view/clearPage.js"></script>
   <script src="src/view/listBooks.js"></script>
   <script src="src/view/createBook.js"></script>
   <script src="src/view/deleteBook.js"></script>
@@ -23,7 +24,7 @@
       <menu>
         <!-- <li><a href="#" onclick="load_listBooks()"><button type="button">List all books</button></a></li> -->
         <li><a href="#" onclick="pl.view.loadBooks.setupHTML()"><button type="button">List all books</button></a></li>
-        <li><a href="#" onclick=""><button type="button">Add a new book</button></a></li>
+        <li><a href="#" onclick="pl.view.loadCreateBook.setupHTML()"><button type="button">Add a new book</button></a></li>
         <li><a href="#" onclick=""><button type="button">Update a book</button></a></li>
         <li><a href="#" onclick=""><button type="button">Delete a book</button></a></li>
         <li><button type="button" onclick="Book.clearData()">Clear database</button></li>
