@@ -18,7 +18,7 @@ pl.view.loadCreateBook = {
 
         pl.view.createBook.setupUserInterface();
     }
-}
+};
 
 pl.view.createBook = {
     setupUserInterface: function () {

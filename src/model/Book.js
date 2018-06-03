@@ -15,7 +15,7 @@ Book.loadAll = function () {
     var i=0, key="", keys=[], bookTableString="", bookTable={};  
     try {
         if (localStorage["bookTable"]) {
-        bookTableString = localStorage["bookTable"];
+            bookTableString = localStorage["bookTable"];
         }
     } catch (e) {
         alert("Error when reading from Local Storage\n" + e);
@@ -61,7 +61,13 @@ Book.update = function (slots) {
 Book.destroy = function (isbn) {
     if (Book.instances[isbn]) {
       console.log("Book " + isbn + " deleted");
+
       delete Book.instances[isbn];
+
+      console.log("Deleted from localStorage");
+      
+      localStorage.removeItem(["bookTable"], 'isbn');
+      
     } else {
       console.log("There is no book with ISBN " + isbn + " in the database!");
     }

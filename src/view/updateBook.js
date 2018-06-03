@@ -1,3 +1,30 @@
+pl.view.loadUpdateBook = {
+    setupHTML: function () {
+        var element = document.getElementById('content');
+        var htmlString = '';
+
+        //Removes existing content
+        pl.view.clearPage.clearContent();
+
+        htmlString += '<h1>Update a book record</h1>';
+        htmlString += '<form id="Book">';
+        htmlString += '<p>';
+        htmlString += '<label>Select book:';
+        htmlString += '<select name="selectBook"><option value=""> --- </option></select>';
+        htmlString += '</label>';
+        htmlString += '</p>';
+        htmlString += '<p><label>ISBN: <input name="isbn" readonly="readonly" /></label></p>';
+        htmlString += '<p><label>Title: <input name="title" /></label></p>';
+        htmlString += '<p><label>Year: <input name="year" /></label></p>';
+        htmlString += '<p><button type="button" name="commit">Save Changes</button></p>';
+        htmlString += '</form>';
+
+        element.insertAdjacentHTML('beforeend', htmlString);
+
+        pl.view.updateBook.setupUserInterface();
+    }
+};
+
 pl.view.updateBook = {
     setupUserInterface: function () {
         var formEl = document.forms['Book'],

@@ -20,7 +20,7 @@ pl.view.loadBooks = {
     
         pl.view.listBooks.setupUserInterface();
     }
-}
+};
 
 pl.view.listBooks = {
     setupUserInterface: function () {

@@ -1,3 +1,27 @@
+pl.view.loadDeleteBook = {
+    setupHTML: function () {
+        var element = document.getElementById('content');
+        var htmlString = '';
+
+        //Removes existing content
+        pl.view.clearPage.clearContent();
+
+        htmlString += '<h1>Delete a book record</h1>';
+        htmlString += '<form id="Book">';
+        htmlString += '<p>';
+        htmlString += '<label>Select book:';
+        htmlString += '<select name="selectBook"><option value=""> --- </option></select>';
+        htmlString += '</label>';
+        htmlString += '</p>';
+        htmlString += '<p><button type="button" name="commit">Delete</button></p>';
+        htmlString += '</form>';
+
+        element.insertAdjacentHTML('beforeend', htmlString);
+
+        pl.view.deleteBook.setupUserInterface();
+    }
+};
+
 pl.view.deleteBook = {
     setupUserInterface: function () {
         var deleteButton = document.forms['Book'].commit;

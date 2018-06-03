@@ -11,6 +11,10 @@
   <script src="src/view/deleteBook.js"></script>
   <script src="src/view/updateBook.js"></script>
 
+  <!-- <script>
+    window.addEventListener('onload', Book.loadAll())
+  </script> -->
+
   <link rel="stylesheet" type="text/css" href="style.css">
   <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
 </head>
@@ -25,8 +29,8 @@
         <!-- <li><a href="#" onclick="load_listBooks()"><button type="button">List all books</button></a></li> -->
         <li><a href="#" onclick="pl.view.loadBooks.setupHTML()"><button type="button">List all books</button></a></li>
         <li><a href="#" onclick="pl.view.loadCreateBook.setupHTML()"><button type="button">Add a new book</button></a></li>
-        <li><a href="#" onclick=""><button type="button">Update a book</button></a></li>
-        <li><a href="#" onclick=""><button type="button">Delete a book</button></a></li>
+        <li><a href="#" onclick="pl.view.loadUpdateBook.setupHTML()"><button type="button">Update a book</button></a></li>
+        <li><a href="#" onclick="pl.view.loadDeleteBook.setupHTML()"><button type="button">Delete a book</button></a></li>
         <li><button type="button" onclick="Book.clearData()">Clear database</button></li>
         <li><button type="button" onclick="Book.createTestData()">Create test data</button></li>
       </menu>
